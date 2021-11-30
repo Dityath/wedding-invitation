@@ -1,0 +1,108 @@
+.jumbotron {
+  font-size: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  h1 {
+    margin: 0;
+  }
+}
+
+.logo {
+  color: white;
+  margin-left: 2vw;
+}
+
+.nav {
+  height: 15%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s ease-in-out;
+    li {
+      display: inline-block;
+      padding: 30px 0px;
+      a {
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: white;
+        padding: 30px 20px;
+      }
+    }
+  }
+}
+
+.icon-menu {
+  width: 100%;
+  background: white;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 2vmin 4vw;
+  cursor: pointer;
+  color: black;
+  display: none;
+  transition: 1s;
+}
+
+//   .bg-biru:hover {
+//     background-color: blue;
+//     cursor: pointer;
+//     a {
+//         color: white;
+//     }
+//   }
+
+@media (max-width: 885px) {
+  .logo {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+
+  .nav ul {
+    max-height: 0px;
+    background: white;
+    padding-right: 0;
+  }
+
+  .showing {
+    max-height: 25em;
+    position: relative;
+    z-index: 20;
+  }
+
+  .nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    a {
+      padding: 20px 0px;
+      color: black;
+    }
+  }
+
+  .icon-menu {
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  .logo {
+    margin-top: 18px;
+    img {
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Almarai:wght@300;400&family=Pacifico&family=Roboto:wght@300;400&display=swap');
+@import './colors.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  P {
+    margin: 0;
+  }
+  .home-container {
+    font-family: 'Josefin Sans', sans-serif;
+    @import './partial/Header.scss';
+    @import './partial/Undangan.scss';
+    @import './partial/Akad.scss';
+    @import './partial/Dokumentasi.scss';
+    @import './partial/Amplop.scss';
+    @import './partial/Ucapan.scss';
+    @import './partial/Penutup.scss';
+    @import './partial/Footer.scss';
+    .btn-audio {
+      position: fixed;
+      bottom: 4vmin;
+      left: 4vmin;
+      img {
+        width: 12vmin;
+        cursor: pointer;
+      }
+    }
+  }
+}

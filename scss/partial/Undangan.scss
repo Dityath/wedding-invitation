@@ -1,0 +1,120 @@
+.undangan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: url("../../public/images/LEAVES1.png") left top / 30vw 30vh
+      no-repeat,
+    url("../../public/images/LEAVES2.png") right bottom / 15% 60% no-repeat;
+  padding: 2vh 0;
+  .salam {
+    p {
+      font-family: "Pacifico", cursive;
+      color: $green-wed;
+      font-weight: 400;
+      font-size: 7vmin;
+      margin: 0;
+    }
+    margin-bottom: 2%;
+  }
+  .stroke {
+    img {
+      width: 50vw;
+    }
+    margin-bottom: 3%;
+  }
+  .countdown {
+    display: flex;
+    align-items: flex-start;
+
+    .time {
+      text-align: center;
+    }
+    h1,
+    p {
+      margin: 0;
+    }
+    h1 {
+      font-size: 9vmin;
+      font-weight: 400;
+    }
+    p {
+      font-weight: bold;
+      font-size: 2.4vmin;
+    }
+    .divider {
+      font-size: 5vw;
+      margin: 0 0.5vw;
+    }
+    margin-bottom: 3%;
+  }
+  .deskripsi {
+    text-align: center;
+    width: 60%;
+    P {
+      font-size: 2.4vmin;
+    }
+    margin-bottom: 3%;
+  }
+  .pasangan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3%;
+    .profil-info {
+      text-align: center;
+      width: 17%;
+      p:first-child {
+        font-size: 2vw;
+        font-family: "Pacifico", cursive;
+        color: $green-wed-2;
+      }
+      p:last-child {
+        font-size: 1.1vw;
+        font-weight: 400;
+      }
+    }
+    .profil-pic {
+      margin: 0 3vw;
+      display: flex;
+      align-items: center;
+      .round-ava {
+        width: 10vw;
+      }
+      .love {
+        width: 3.5vw;
+        margin: 0 1.5vw;
+      }
+    }
+  }
+}
+@media (max-width: 885px) {
+  .undangan-container {
+    background-size: 25vw 15vw, 20vw 45vw;
+    .pasangan {
+      flex-direction: column;
+      .profil-info {
+        text-align: center;
+        width: 40%;
+        p:first-child {
+          font-size: 4vmin;
+        }
+        p:last-child {
+          font-size: 2.2vmin;
+        }
+      }
+      .profil-pic {
+        flex-direction: column;
+        margin: 2vmin 3vw;
+        .round-ava {
+          width: 20vmin;
+        }
+        .love {
+          width: 7vmin;
+          margin: 4vmin 1.5vw;
+        }
+      }
+    }
+  }
+}

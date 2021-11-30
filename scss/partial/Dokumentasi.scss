@@ -1,0 +1,78 @@
+.arrow-back {
+  position: absolute;
+  top: 50%;
+  left: -4vmax;
+  z-index: 4;
+}
+
+.arrow-next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  right: -4vmax;
+}
+
+.arrow-next:hover,
+.arrow-back:hover {
+  cursor: pointer;
+}
+
+.slick-slide.slick-center img {
+  transform: scale(1.2);
+}
+
+.slick-list,
+.slick-track {
+  height: 70vmin !important;
+}
+
+.dokumentasi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vmin 0;
+
+  .title {
+    font-family: "Pacifico", cursive;
+    color: $green-wed;
+    font-weight: 400;
+    font-size: 7vmin;
+    margin: 0;
+  }
+
+  .carousel {
+    margin-bottom: 7vmin;
+
+    .carousel-img {
+      height: 70vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 30vmin;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+
+  .video {
+    width: 50vmax;
+    max-width: 90%;
+
+    &-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

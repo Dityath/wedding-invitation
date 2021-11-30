@@ -1,0 +1,103 @@
+.akad-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $blue-wed;
+  color: white;
+  padding: 5vh 0;
+
+  .pembuka {
+    margin-bottom: 3vmin;
+    p {
+      font-size: 7vmin;
+      font-family: "Almarai", sans-serif;
+    }
+  }
+
+  .judul {
+    margin-bottom: 3vmin;
+    p {
+      font-family: "Pacifico", cursive;
+      font-size: 5.3vmin;
+      padding: 0 2vw;
+      text-align: center;
+    }
+  }
+
+  .text p {
+    font-size: 2.4vmin;
+    margin: 0;
+    margin-bottom: 2vh;
+  }
+
+  .info {
+    width: 70vmin;
+    max-width: 60%;
+    border: 2.5px solid white;
+    border-radius: 2vmin;
+    margin: 0 1vw;
+    margin-bottom: 3vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5vmax 0;
+
+    &-judul {
+      width: 100%;
+      text-align: center;
+
+      h2 {
+        margin: 0;
+        font-size: 4vmin;
+        font-weight: 700;
+      }
+
+      div {
+        width: 70%;
+        height: 0.1vw;
+        margin: 0.8vmax auto 1.8vmax;
+        background: white;
+      }
+    }
+
+    .detail {
+      &-wl {
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 2.4vmin;
+          margin-left: 1vw;
+        }
+        margin-bottom: 1vmin;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    margin-bottom: 2vh;
+
+    &-link {
+      text-decoration: none;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding: 0.5vmax 4vmin 0.5vmax 2vmin;
+      border-radius: 2vmin;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+
+      p {
+        color: $green-wed-2;
+        font-size: 4vmin;
+        margin-left: 1vw;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+}
